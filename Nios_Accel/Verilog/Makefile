@@ -1,5 +1,5 @@
-SRCS=src/mkKKNios_tb.v src/mkKKNios.v
-BIN=bin/mkKKNios_tb
+SRCS=src/mkKKAvalonSlave_tb.v ../Bluespec/verilog/mkKKAvalonSlave.v src/FIFO2.v
+BIN=bin/mkKKAvalonSlave_tb
 
 $(BIN): $(SRCS)
 	iverilog $(SRCS) -o $(BIN)
